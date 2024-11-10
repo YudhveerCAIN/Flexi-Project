@@ -1,0 +1,138 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    background: linear-gradient(135deg, #EEE5E9, #FDFDFF);
+    color: #7C7C7C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main container styling */
+.window-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.window-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+}
+
+.add-expense-container h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form styling */
+.add-expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Adjusted gap for more space between fields */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Input group styling with floating label effect */
+.form-field {
+    position: relative;
+    margin-bottom: 30px; /* Added margin-bottom for more space */
+    width: 100%;
+}
+
+/* Label styling */
+.form-field label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    font-size: 16px;
+    color: #666;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    background-color: transparent; /* Removed background from labels */
+}
+
+/* When input has value or is focused, increase label size and change color */
+.form-field input:focus ~ label,
+.form-field input:not(:placeholder-shown) ~ label,
+.form-field.select-category:focus ~ label,
+.form-field.select-type:focus ~ label,
+.form-field label.has-value {
+    top: -25px;
+    font-size: 20px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Input styling for description and amount */
+.form-field input {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 5px 5px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input border color */
+.form-field input:focus {
+    border-color: #3498db;
+}
+
+/* Styling for category and transaction type selects */
+.form-field select {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    padding-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    appearance: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused select border color */
+.form-field select:focus {
+    border-color: #3498db;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+button:focus {
+    outline: none;
+}

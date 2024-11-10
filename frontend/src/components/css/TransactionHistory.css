@@ -1,0 +1,143 @@
+/* Styling for the container */
+.window-container {
+    margin-top: 20px;
+    padding: 30px;
+    position: relative;
+    top: -20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+/* Header for the history section */
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.header-item {
+    flex: 1;
+    text-align: center;
+}
+
+/* Styling the list of history items and enabling scroll */
+.history-list {
+    margin: 0;
+    padding: 0;
+    max-height: 255px; /* Adjust this value as needed */
+    overflow-y: auto; /* Make it scrollable when content exceeds max height */
+}
+
+/* Customizing the scrollbar */
+.history-list::-webkit-scrollbar {
+    width: 12px; /* Increased width of the scrollbar */
+}
+
+.history-list::-webkit-scrollbar-thumb {
+    background-color: #2980b9; /* Blue color for the thumb */
+    border-radius: 10px; /* Round edges */
+    border: 2px solid #fff; /* Add some space around the thumb */
+}
+
+.history-list::-webkit-scrollbar-thumb:hover {
+    background-color: #1c6ea4; /* Darker blue on hover */
+}
+
+.history-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Lighter track color */
+    border-radius: 10px;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.history-item.expense {
+    background-color: #f8d7da; /* Light red tint */
+    border-left: 8px solid #e74c3c; /* Red border */
+}
+
+.history-item.income {
+    background-color: #d4edda; /* Light green tint */
+    border-left: 8px solid #27ae60; /* Green border */
+}
+
+.history-details {
+    flex: 1;
+    text-align: center;
+}
+
+.history-actions {
+    display: flex;
+    gap: 15px; /* Increased gap between buttons */
+}
+
+.history-actions button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    margin: 0 5px; /* Adds margin to space out buttons */
+}
+
+/* Edit button styling */
+.history-actions button.edit {
+    background-color: #2980b9;
+    color: white;
+}
+
+.history-actions button.edit:hover {
+    background-color: #1c6ea4;
+}
+
+/* Delete button styling */
+.history-actions button.delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.history-actions button.delete:hover {
+    background-color: #c0392b;
+}
+
+.add-expense-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-expense-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px; /* Adds margin below the button */
+}
+
+.add-expense-button:hover {
+    background-color: #1c6ea4;
+}

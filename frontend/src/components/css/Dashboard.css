@@ -1,0 +1,121 @@
+/* Dashboard.css */
+
+body {
+    background-color: #e0f4f7;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.dashboard-header {
+    font-size: 2rem;
+    color: #00796b;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.summary-item {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.summary-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #4f5b62;
+}
+
+.summary-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Color-coding for balance */
+.positive-balance {
+    background-color: #e0f8e0;
+    color: #2ecc71;
+}
+
+.negative-balance {
+    background-color: #fde2e2;
+    color: #e74c3c;
+}
+
+/* Color-coding for transaction types */
+.summary-item.income {
+    background-color: #e0f8e0;
+    color: #2ecc71;
+}
+
+.summary-item.expense {
+    background-color: #fde2e2;
+    color: #e74c3c;
+}
+
+/* Hover effect for summary items */
+.summary-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Added margin between the buttons */
+}
+
+.dashboard-actions a,
+.dashboard-button button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-actions a:hover,
+.dashboard-button button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.dashboard-actions a:focus,
+.dashboard-button button:focus {
+    outline: none;
+}
+
+/* Add margin to the button in dashboard-button */
+.dashboard-button {
+    margin-top: 1rem; /* Add some margin from the Add Expense button */
+}
